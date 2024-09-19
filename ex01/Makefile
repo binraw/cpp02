@@ -22,7 +22,7 @@ ${NAME}: ${OBJS}
 
 
 
-%.o: %.c  Makefile ${HEADER_FILE}
+%.o: %.cpp  Makefile ${HEADER_FILE}
 	$(CC) ${CFLAGS} -c $< -o $@
 
 clean:
