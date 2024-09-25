@@ -15,7 +15,7 @@ Fixed::Fixed(int nb)
 Fixed::Fixed(float nb)
 {
     std::cout << "Float constructor called" << std::endl;
-    this->value = static_cast<int> (nb * (1<< value_static));
+    this->value = static_cast<int> (nb * (1 << value_static));
 }
 
 Fixed::Fixed(const Fixed &other)
