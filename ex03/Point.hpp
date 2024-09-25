@@ -2,6 +2,7 @@
 # define POINT_HPP
 
 #include "Fixed.hpp"
+#include <cmath>
 class Point
 {
 private:
@@ -19,7 +20,8 @@ public:
     ~Point();
 };
 bool bsp(Point const a, Point const b, Point const c, Point const point);
-
+bool isPointInTriangle(const Point& a, const Point& b, const Point& c, const Point& p);
+float area( Point& a,  Point& b, Point& c);
 float min_pointY(Point const a, Point const b, Point const c);
 float min_pointX(Point const a, Point const b, Point const c);
 float max_pointY(Point const a, Point const b, Point const c);

@@ -1,8 +1,8 @@
 NAME = Fixed
 
 
-SRCS_FILE = Fixed.cpp main.cpp
-HEADER_FILE = Fixed.hpp
+SRCS_FILE = Fixed.cpp main.cpp Point.cpp
+HEADER_FILE = Fixed.hpp Point.hpp
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
