@@ -1,8 +1,8 @@
 #include "Fixed.hpp"
+#include <cmath>
 
 Fixed::Fixed()
 {
-	
 	this->value = 0;
 }
 
@@ -13,8 +13,7 @@ Fixed::Fixed(int nb)
 
 Fixed::Fixed(float nb)
 {
-    
-    this->value = static_cast<int> (nb * (1<< value_static));
+    this->value = roundf(nb * (1<< value_static));
 }
 
 Fixed::Fixed(const Fixed &other)
@@ -30,7 +29,7 @@ float Fixed::toFloat() const
 
 int Fixed::toInt() const
 {
-    return value << value_static;
+    return value >> value_static;
 }
 
 Fixed &Fixed::operator=(const Fixed & other)

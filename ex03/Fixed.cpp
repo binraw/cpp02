@@ -2,7 +2,6 @@
 
 Fixed::Fixed()
 {
-	
 	this->value = 0;
 }
 
@@ -30,7 +29,7 @@ float Fixed::toFloat() const
 
 int Fixed::toInt() const
 {
-    return value << value_static;
+    return value >> value_static;
 }
 
 Fixed &Fixed::operator=(const Fixed & other)

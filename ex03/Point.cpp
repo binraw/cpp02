@@ -128,7 +128,7 @@ float min_pointY(Point  a, Point  b, Point  c)
 
 float area( Point& a,  Point& b, Point& c) 
 {
-    return a.getX() * (b.getY() - c.getY()) + b.getX() * (c.getY() - a.getY()) + c.getX() * (a.getY() - b.getY()) / 2.0;
+    return (a.getX() * (b.getY() - c.getY()) + b.getX() * (c.getY() - a.getY()) + c.getX() * (a.getY() - b.getY())) / 2.0;
 }
 
 
